@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10100e">
+<meta name="description" content="Business Word Communication (BWC) — communication, stratégie de marque et création de contenu.">
+<title>Business Word Communication | BWC</title>
+<style>
+:root{--bg:#0e0e0c;--panel:#171714;--gold:#d8b56a;--gold2:#f1dba0;--cream:#f5f0e5;--muted:#b7b1a5;--line:#3a3428}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--cream);font-family:Georgia,"Times New Roman",serif}a{color:inherit}button,input,textarea,select{font:inherit}.wrap{width:min(1120px,91%);margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,#8e6b2f,var(--gold2),#8e6b2f)}
+header{position:sticky;top:0;z-index:10;background:#0e0e0ceF;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff13}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.monogram{width:44px;height:44px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);font-size:1.05rem;letter-spacing:-.08em}.brand-text strong{display:block;letter-spacing:.13em;font-size:.94rem}.brand-text small{display:block;color:var(--gold);font-family:Arial,sans-serif;font-size:.62rem;letter-spacing:.2em;margin-top:4px}
+nav{display:flex;align-items:center;gap:25px}nav a{text-decoration:none;color:#ddd5c5;font-family:Arial,sans-serif;font-size:.83rem}nav a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;text-decoration:none;border:1px solid var(--gold);font-family:Arial,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.04em;transition:.2s;cursor:pointer}.btn-gold{background:var(--gold);color:#15130e}.btn-gold:hover{background:var(--gold2)}.btn-outline{color:var(--gold2);background:transparent}.btn-outline:hover{background:#d8b56a15}
+.hero{position:relative;overflow:hidden;min-height:620px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 80% 45%,#72562922,transparent 42%),linear-gradient(120deg,#11110f,#0d0d0b)}
+.hero:after{content:"BWC";position:absolute;right:-3%;bottom:-.19em;font-size:clamp(9rem,27vw,24rem);font-weight:bold;letter-spacing:-.09em;color:#ffffff04;pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:760px;padding:90px 0}
+.kicker{font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px}.kicker:before{content:"";width:36px;height:1px;background:var(--gold)}
+h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.98;letter-spacing:-.055em;font-weight:normal;margin:28px 0}h1 em{font-weight:normal;color:var(--gold2)}.hero p{font-family:Arial,sans-serif;line-height:1.85;color:var(--muted);max-width:560px;font-size:1rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-note{margin-top:55px;border-top:1px solid var(--line);padding-top:18px;display:flex;gap:28px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:.73rem;letter-spacing:.07em;color:#c5bcaa}.hero-note span:before{content:"✦";color:var(--gold);margin-right:9px}
+section{padding:90px 0}.section-head{max-width:690px;margin-bottom:38px}.eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-size:.7rem}.section-head h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:normal;letter-spacing:-.04em;line-height:1.08;margin:15px 0}.section-head p{font-family:Arial,sans-serif;color:var(--muted);line-height:1.8;margin:0}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.about-mark{min-height:330px;border:1px solid var(--line);display:grid;place-items:center;background:linear-gradient(135deg,#191813,#11110f);position:relative}.about-mark:before,.about-mark:after{content:"";position:absolute;width:65%;height:65%;border:1px solid #d8b56a50}.about-mark:after{width:52%;height:52%;border-color:#d8b56a28}.big-bwc{font-size:clamp(4rem,10vw,7rem);letter-spacing:-.1em;color:var(--gold2);position:relative;z-index:1}.about-copy p{font-family:Arial,sans-serif;color:var(--muted);line-height:1.9;margin:0 0 18px}.about-copy .lead{font-family:Georgia,serif;color:var(--cream);font-size:1.45rem;line-height:1.5}
+.services{background:#141411;border-top:1px solid #ffffff0b;border-bottom:1px solid #ffffff0b}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{border:1px solid var(--line);padding:27px 24px;min-height:245px;transition:.2s}.service:hover{border-color:#9d7b40;background:#d8b56a08}.service-num{font-family:Arial,sans-serif;color:var(--gold);font-size:.72rem;letter-spacing:.15em}.service h3{font-size:1.45rem;font-weight:normal;margin:25px 0 12px}.service p{font-family:Arial,sans-serif;font-size:.9rem;color:var(--muted);line-height:1.7;margin:0}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.value{border-top:1px solid var(--gold);padding-top:20px}.value h3{font-weight:normal;font-size:1.4rem;margin:0 0 10px}.value p{font-family:Arial,sans-serif;color:var(--muted);line-height:1.75;font-size:.9rem;margin:0}
+.cta{padding:0 0 90px}.cta-box{padding:clamp(28px,6vw,65px);border:1px solid #7d6337;background:radial-gradient(ellipse at 100% 0%,#d8b56a17,transparent 55%),#151510;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-box h2{font-weight:normal;font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:14px 0}.cta-box p{font-family:Arial,sans-serif;color:var(--muted);line-height:1.7;max-width:570px;margin:0}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}.contact-info p{font-family:Arial,sans-serif;color:var(--muted);line-height:1.8}.contact-info a{color:var(--gold2);text-decoration:none}.contact-form{display:grid;gap:13px}.contact-form label{font-family:Arial,sans-serif;color:#d8d0c1;font-size:.8rem}.contact-form input,.contact-form textarea,.contact-form select{width:100%;margin-top:7px;padding:13px 14px;border:1px solid var(--line);background:#151512;color:var(--cream);outline:none;border-radius:0}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}.contact-form textarea{min-height:120px;resize:vertical}.form-note{font-family:Arial,sans-serif;color:var(--muted);font-size:.78rem;line-height:1.6}
+footer{border-top:1px solid var(--line);padding:26px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.footer-inner p,.footer-inner a{font-family:Arial,sans-serif;font-size:.78rem;color:var(--muted);text-decoration:none}.footer-brand{color:var(--gold2);letter-spacing:.13em;font-size:.85rem}
+@media(max-width:800px){nav{gap:13px}nav a{font-size:.75rem}.nav>.btn{display:none}.about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.about-mark{min-height:230px}.service-grid{grid-template-columns:repeat(2,1fr)}.cta-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.nav{min-height:68px}.brand-text strong{font-size:.8rem}.brand-text small{font-size:.55rem}.monogram{width:39px;height:39px}nav{gap:12px}nav a{font-size:.7rem}nav a:nth-child(2){display:none}.hero{min-height:570px}.hero-inner{padding:65px 0}.hero-note{gap:12px;flex-direction:column;margin-top:38px}.hero p{font-size:.93rem}section{padding:65px 0}.service-grid,.values-grid{grid-template-columns:1fr}.service{min-height:auto}.cta{padding-bottom:65px}.footer-inner{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#accueil" aria-label="BWC accueil">
+      <span class="monogram">BWC</span>
+      <span class="brand-text"><strong>BUSINESS WORD</strong><small>COMMUNICATION</small></span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">À propos</a><a href="#services">Services</a><a href="#valeurs">Nos valeurs</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-outline" href="#contact">Parlons de votre projet ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="kicker">Communication · Stratégie · Image</div>
+        <h1>Les idées fortes<br>méritent une<br><em>image remarquable.</em></h1>
+        <p>Business Word Communication (BWC) accompagne les marques, les entrepreneurs et les projets qui veulent communiquer avec clarté, élégance et impact.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#services">Découvrir nos services ↗</a><a class="btn btn-outline" href="#apropos">Découvrir BWC</a></div>
+        <div class="hero-note"><span>Vision stratégique</span><span>Identité soignée</span><span>Communication efficace</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="wrap about-grid">
+      <div class="about-mark" aria-label="Monogramme BWC"><div class="big-bwc">BWC</div></div>
+      <div class="about-copy">
+        <div class="eyebrow">01 — À propos de BWC</div>
+        <p class="lead">Donner aux idées la visibilité qu’elles méritent.</p>
+        <p>Business Word Communication est une identité dédiée à la communication et à la valorisation des projets. Notre ambition : transformer les messages en histoires claires, cohérentes et mémorables.</p>
+        <p>Que vous lanciez une activité, développiez une marque ou prépariez une campagne, BWC vous aide à présenter votre vision avec professionnalisme.</p>
+        <a class="btn btn-outline" href="#contact">Entrer en contact ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">02 — Ce que nous faisons</div><h2>Une communication<br><em style="color:var(--gold2)">qui a du sens.</em></h2><p>Des solutions à adapter à vos objectifs, à votre public et à votre identité.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="service-num">SERVICE 01</div><h3>Stratégie de communication</h3><p>Clarifier votre message, définir vos objectifs et construire une présence cohérente.</p></article>
+        <article class="service"><div class="service-num">SERVICE 02</div><h3>Identité de marque</h3><p>Travailler votre image, vos messages et les éléments qui rendent votre marque reconnaissable.</p></article>
+        <article class="service"><div class="service-num">SERVICE 03</div><h3>Contenu & réseaux sociaux</h3><p>Préparer des contenus utiles et adaptés à vos plateformes et à votre audience.</p></article>
+        <article class="service"><div class="service-num">SERVICE 04</div><h3>Supports de communication</h3><p>Présenter vos idées à travers des supports clairs pour vos campagnes et vos événements.</p></article>
+        <article class="service"><div class="service-num">SERVICE 05</div><h3>Conseil & accompagnement</h3><p>Faire avancer vos projets avec un regard extérieur, structuré et créatif.</p></article>
+        <article class="service"><div class="service-num">SERVICE 06</div><h3>Visibilité digitale</h3><p>Renforcer votre présence en ligne avec une approche adaptée à vos besoins.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="valeurs">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">03 — Notre approche</div><h2>Le fond d’abord.<br>La forme avec exigence.</h2></div>
+      <div class="values-grid">
+        <article class="value"><h3>Clarté</h3><p>Un message compréhensible, cohérent et pensé pour les bonnes personnes.</p></article>
+        <article class="value"><h3>Créativité</h3><p>Des idées originales qui servent un objectif et respectent votre identité.</p></article>
+        <article class="value"><h3>Professionnalisme</h3><p>Une attention aux détails, à la qualité et à la relation avec chaque partenaire.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap cta">
+    <div class="cta-box">
+      <div><div class="eyebrow">Votre prochain chapitre commence ici</div><h2>Parlons de votre vision.</h2><p>Présentez-nous votre idée, votre activité ou votre prochain projet. Construisons ensemble une communication à votre image.</p></div>
+      <a class="btn btn-gold" href="#contact">Démarrer une conversation ↗</a>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow">04 — Contact</div>
+        <h2 style="font-size:clamp(2.4rem,5vw,4rem);font-weight:normal;line-height:1.05;margin:17px 0">Faisons connaissance.</h2>
+        <p>Vous avez une question ou souhaitez discuter d’une collaboration ? Envoyez-nous un message. Le formulaire prépare un message WhatsApp à votre intention.</p>
+        <p><strong style="color:var(--cream)">Business Word Communication</strong><br><span style="color:var(--gold)">BWC</span></p>
+        <p>WhatsApp : <a id="whatsappLink" href="#contact">Configurez votre numéro dans le code</a></p>
+        <p class="form-note">Avant publication, remplacez le numéro d’exemple par votre vrai numéro WhatsApp.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>Votre nom<input id="name" name="name" required placeholder="Comment vous appelez-vous ?"></label>
+        <label>Votre adresse e-mail (facultatif)<input id="email" name="email" type="email" placeholder="vous@exemple.com"></label>
+        <label>Objet de votre demande<select id="subject" name="subject"><option>Demande d’information</option><option>Stratégie de communication</option><option>Identité de marque</option><option>Création de contenu</option><option>Partenariat</option><option>Autre projet</option></select></label>
+        <label>Votre message<textarea id="message" name="message" required placeholder="Parlez-nous de votre projet…"></textarea></label>
+        <button class="btn btn-gold" type="submit">Préparer mon message ↗</button>
+        <p class="form-note">Ce formulaire ne stocke pas les données. Il ouvre WhatsApp pour vous permettre d’envoyer le message vous-même.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap footer-inner"><div class="footer-brand">BUSINESS WORD COMMUNICATION · BWC</div><p>© <span id="year"></span> BWC. Tous droits réservés.</p><a href="#accueil">Retour en haut ↑</a></div></footer>
+
+<script>
+/* PERSONNALISATION :
+   Remplace le numéro ci-dessous par le numéro WhatsApp de BWC.
+   Format international, chiffres uniquement. Exemple Sénégal : 221771234567.
+*/
+const WHATSAPP_NUMBER = "221770000000"; // À REMPLACER avant publication
+const numberIsConfigured = /^\d{10,15}$/.test(WHATSAPP_NUMBER) && WHATSAPP_NUMBER !== "221770000000";
+const whatsappLink = document.getElementById("whatsappLink");
+if(numberIsConfigured){
+  whatsappLink.href = "https://wa.me/" + WHATSAPP_NUMBER;
+  whatsappLink.textContent = "Nous écrire sur WhatsApp ↗";
+  whatsappLink.target = "_blank";
+  whatsappLink.rel = "noopener noreferrer";
+}
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  if(!numberIsConfigured){
+    alert("Le site fonctionne, mais le numéro WhatsApp doit être configuré dans le code avant d'envoyer un message.");
+    return;
+  }
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value.trim();
+  const text = `Bonjour Business Word Communication (BWC),\n\nNom : ${name}\nE-mail : ${email || "Non indiqué"}\nObjet : ${subject}\n\nMessage :\n${message}`;
+  window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
